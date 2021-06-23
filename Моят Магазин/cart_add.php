@@ -7,4 +7,5 @@
     $add_to_cart_query="insert into users_items(user_id,item_id,status) values ('$user_id','$item_id','Добавено в количката)";
     $add_to_cart_result=mysqli_query($con,$add_to_cart_query) or die(mysqli_error($con));
     header('location: products.php');
+//
 ?>
